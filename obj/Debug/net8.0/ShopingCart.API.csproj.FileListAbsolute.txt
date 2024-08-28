@@ -137,3 +137,4 @@ D:\Learning\Net Core Web API\ShopingCart.API\obj\Debug\net8.0\refint\ShopingCart
 D:\Learning\Net Core Web API\ShopingCart.API\obj\Debug\net8.0\ShopingCart.API.pdb
 D:\Learning\Net Core Web API\ShopingCart.API\obj\Debug\net8.0\ShopingCart.API.genruntimeconfig.cache
 D:\Learning\Net Core Web API\ShopingCart.API\obj\Debug\net8.0\ref\ShopingCart.API.dll
+D:\Learning\Net Core Web API\ShopingCart.API\obj\Debug\net8.0\ShopingCart.API.sourcelink.json
