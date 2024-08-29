@@ -24,6 +24,10 @@ jobs:
       - name: dotnet publish
         run: dotnet publish -c Release -o ${{ github.workspace }}/myapp
 
+      # Diagnostic step: List all directories and files after publishing
+      - name: List files after publish
+        run: dir ${{ github.workspace }} /s
+
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
@@ -45,7 +49,7 @@ jobs:
         with:
           name: .net-app
 
-      # Check the downloaded files and paths
+      # Diagnostic step: List downloaded files and paths
       - name: List downloaded files
         run: dir ${{ github.workspace }}/myapp
 
