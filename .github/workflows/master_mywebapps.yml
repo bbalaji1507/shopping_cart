@@ -44,7 +44,11 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: .net-app
-      
+
+      # Check the downloaded files and paths
+      - name: List downloaded files
+        run: dir myapp
+
       - name: Login to Azure
         uses: azure/login@v2
         with:
