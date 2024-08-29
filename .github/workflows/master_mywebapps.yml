@@ -24,9 +24,10 @@ jobs:
       - name: dotnet publish
         run: dotnet publish -c Release -o ${{ github.workspace }}/myapp
 
-      # Diagnostic step: List all directories and files after publishing
+      # Diagnostic step: List all directories and files after publishing using a different method
       - name: List files after publish
-        run: dir ${{ github.workspace }} /s
+        shell: bash
+        run: ls -R ${{ github.workspace }}/myapp
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
@@ -49,9 +50,10 @@ jobs:
         with:
           name: .net-app
 
-      # Diagnostic step: List downloaded files and paths
+      # Diagnostic step: List downloaded files and paths using a different method
       - name: List downloaded files
-        run: dir ${{ github.workspace }}/myapp
+        shell: bash
+        run: ls -R ${{ github.workspace }}/myapp
 
       - name: Login to Azure
         uses: azure/login@v2
