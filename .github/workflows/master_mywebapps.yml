@@ -45,9 +45,11 @@ jobs:
         with:
           name: .net-app
 
-      # Use the extracted artifact path directly
       - name: List downloaded files
         run: dir D:\a\shopping_cart\shopping_cart
+
+      - name: List extracted files for deployment
+        run: dir D:\a\shopping_cart\shopping_cart\myapp
 
       - name: Login to Azure
         uses: azure/login@v2
