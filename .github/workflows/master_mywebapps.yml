@@ -50,7 +50,7 @@ jobs:
         with:
           client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_03D30604D193479EA68914563EA26797 }}
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_073B0EE0CB7147E0946BECA70F8F7F52 }}
-          subscription-id: ${{ AZUREAPPSERVICE_SUBSCRIPTIONID_2AE8E6D3A705469BBCD4A3F4287B43D4 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_2AE8E6D3A705469BBCD4A3F4287B43D4 }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
